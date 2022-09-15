@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dungeons and Dragons</title>
+    <style>
+        body {
+            background-color: #f5deb3;
+            font-family: Arial, Helvetica, sans-serif; 
+            color: black;
+        }
+        
+        
+        .img-dado{
+            margin-right: 20px;
+            border: 1px solid #000 
+        }
+        
+        .img-ficha{
+            margin-right:  25px;
+            border: 2px solid #000;
+        }
+        .caixa{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .texto-dado {
+            display: flex;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Dungeons and Dragons</h1>
+    <p><strong><u>Guia para iniciantes</u></strong></p>
+    <p>Dungeons and Dragons mais conhecido como <i>D&D</i>, é uma jogo de mesa que eleva a criatividade dos jogadores usanndo dados e sua imaginação.</p>
+        
+    <h3> Vamos la como jogar D&D</h3>
+    <p>
+        De um jeito simples, precisa montar uma mesa com um pessoal que esteja afim de usar a sua criatividade<br>
+        Uma mesa precisa sempre de um mestre, alguem que ira narrar a historia e os acontecimentos e que deixo lucido na mente de todos da mesa o'que se passa naquele momento
+    </p> 
+    
+    
+    <h4> Lista doque é necessario para jogar </h4>
+
+    <div class="caixa">
+        <div class="texto-dado">
+            <img src="Imagens/dados roxos.png" 
+            width="150" 
+            height="150"
+            title=" Dados DD"
+            alt=" Dados DD "
+            class="img-dado"/>
+            <ul>
+                <li> Mestre</li>
+                <li> Um conjunto de Dados</li>
+                <li> E uma ficha de personagem</li> 
+            </ul>
+        </div>
+        <button id="botao" class="botaod20" onclick="RolarD20()"> Rolar D20 </button>     
+    </div>
+        
+    <div>
+        <h3> O que é uma ficha de personagem</h3>
+        <p> ficha de personagem é uma ficha aonde todos os atributos, habilidades, armas do seu personagem ficam escritas.</p>
+        <a href="Imagens/dados roxos.png" download>
+            <img 
+                src="Imagens/ficha personagem.png" 
+                width="200" 
+                height="200"
+                title=" Ficha personagem"
+                alt=" Ficha personagem"
+                class="img-dado"/>
+        </a>
+    </div>
+        
+    <h3>aonde acho essas armas habilidades</h3>
+    <a href="https://ordempendragon.files.wordpress.com/2017/04/dd-5e-livro-do-jogador-fundo-branco-biblioteca-c3a9lfica.pdf" target="_blank">
+        lIvro do jogador
+    </a>
+       
+   <script>
+        function RolarD20(){
+            alert(Math.floor(Math.random() * 20 +1))
+        }
+   </script>         
+</body>
+</html>
