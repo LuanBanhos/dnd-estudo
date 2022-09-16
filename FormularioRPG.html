@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FormularioRPG.css"> 
+    <title>FormularioRPG</title>
+</head>
+<body>
+    <h1> Formulario Rpg</h1>
+    <p> Preencha com os dados</p>
+        <form action="FICHARPG.HTML" method="post">
+    <div class="campo"> 
+            <label for="login", class="nome"> <strong>Nome</strong></label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" required> 
+    </div> 
+    <div>
+    <br>
+        <fieldset class="campo">
+            <label for="level", class="level">Level</label>
+            <input type="number" id="level" name="level" min="1" max="20" value="0">
+            <label for="xp", class="xp">XP</label>
+            <input type="number" id="xp" name="xp" min="1" max="2000" value="0">
+        </fieldset>
+    </div>
+         
+    <div class="campo">
+            <label for="classe", class="classe"> Classe</label>
+            <select name="classe" id="classe">
+                    <option value="2"> </option>
+                    <option value="3">Bárbaro</option>
+                    <option value="4">Bardo</option>
+                    <option value="5">Bruxo </option>
+                    <option value="6">Clérigo</option>
+                    <option value="7">Druida </option>
+                    <option value="8">Feiticeiro</option>
+                    <option value="9">Guerreiro</option>
+                    <option value="10">Ladino</option>
+                    <option value="11">Mago</option>
+                    <option value="12">Monge</option>
+                    <option value="13">Paladino</option>
+            </select>
+    </div>
+    <br>
+    <div class="campo">
+            <fieldset class="grupo">
+                    <label for="força", class="força "> Força</label>
+                    <input type="number" id="força" name="força" min="1" max="20" value="0">
+                <br>
+                    <label for="destreza", class="destreza "> Destreza</label>
+                    <input type="number" id="destreza" name="destreza" min="1" max="20" value="0">
+                <br>
+                    <label for="sabedoria", class="sabedoria "> Sabedoria</label>
+                    <input type="number" id="sabedoria" name="sabedoria" min="1" max="20" value="0">
+                <br>
+                    <label for="constituição", class="constituição "> Constituição</label>
+                    <input type="number" id="constituição" name="constituição" min="1" max="20" value="0">
+                <br>
+                    <label for="carisma", class="carisma "> Carisma</label>
+                    <input type="number" id="carisma" name="carisma" min="1" max="20" value="0">
+            </fieldset>
+    </div>
+    <br>
+    <div class="campo">
+            <label>BackGround</label>
+            <textarea row="6" style="width:15" id=" background" name="background"></textarea>
+    </div>
+<div >
+            <button class="botao" type="submit">Salvar</button>
+</div>
+
+
+
+
+
+        </form>
+
+
+
+
+</body>
+</html>

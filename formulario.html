@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="destino.php" method="post">
+            <label for="login">login</label>
+            <input type="text" id="login" name="login">
+            <label for="senha">senha</label>
+            <input type="password" id="senha" name="senha">
+            <input type="submit" id="botao" value="login">
+            <input type=" text" id="nomecompleto" name="nomecompleto">
+            <input type="checkbox" id="aceito" name="aceito" value="sim">
+            <input type="radio" id="pagamento" name="pagamento" value="dinheiro">
+            <select name="estadoID" id="estadoID">
+                <option value="1"> </option>
+                <option value="2"> São paulo</option>
+                <option value="3"> rio de janeiro</option>
+                <option value="4"> minas</option>
+            </select>
+    </form>
+    <form action="destino.php" autocomplete="on">
+        <input type="text" name="nome">
+        <input type="email" name="email" autocomplete="off">
+        <input type="submit" value="enviar">
+    </form>
+    <form action="destino.php" novalidate>
+        <input type="email" name="user_email">
+        <input type="submit">
+    </form>
+    <!--novos tipos de input
+    .color
+    .date
+    .datetime
+    .datetime-local
+    .email
+    .month
+    .number
+    .rang
+    .search
+    .tel
+    .time
+    .url
+    .weer
+    -->
+    <!-- Novos atributos do input
+    .required
+    .placeholder
+    .pattern
+    .list
+    .autofocus
+    -->
+    
+</body>
+</html>
